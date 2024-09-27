@@ -1,0 +1,217 @@
+.body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #833ab4, #fd1d1d, #fcb045);
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h1 {
+    font-size: 2rem;
+    color: #fff;
+    text-align: center;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    padding: 2rem;
+    max-width: 500px;
+    width: 100%;
+    margin: 20px auto;
+}
+
+.container-index {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    padding: 2rem;
+    width: 100%;
+    margin: 20px auto;
+}
+
+.form-label {
+    font-weight: bold;
+    color: #fff;
+}
+
+.form-control {
+    border: 1px solid #ced4da;
+    border-radius: 6px;
+    padding: 10px;
+    font-size: 1rem;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+}
+
+.form-control:focus {
+    border-color: #fcb045;
+    outline: none;
+    box-shadow: 0 0 8px rgba(252, 176, 69, 0.6);
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #833ab4;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+    background-color: #b347c6;
+    box-shadow: 0 4px 10px rgba(131, 58, 180, 0.6);
+}
+
+.mt-5 {
+    margin-top: 3rem;
+}
+
+.mb-4 {
+    margin-bottom: 1.5rem;
+}
+
+.mb-3 {
+    margin-bottom: 1rem;
+}
+
+.table {
+    width: 100%;
+    margin-bottom: 1rem;
+    background-color: transparent;
+    border-collapse: collapse;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.table th, .table td {
+    padding: 10px;
+    border: none;
+    text-align: left;
+}
+
+.table th {
+    background-color: #833ab4;
+    color: #fff;
+}
+
+.table td {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+}
+
+.error-message {
+    color: #dc3545;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+a.btn {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #833ab4;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+a.btn:hover {
+    background-color: #b347c6;
+    box-shadow: 0 4px 10px rgba(131, 58, 180, 0.6);
+}
+
+.btn-edit {
+    background-color: #6f42c1; 
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-edit:hover {
+    background-color: #5a3eab;
+}
+
+.btn-delete {
+    background-color: #dc3545; 
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-delete:hover {
+    background-color: #c82333; 
+}
+
+.arrumar{
+    display: flex;
+}
+
+.posts-container {
+    flex-direction: column; 
+    gap: 20px; 
+    align-items: center; 
+}
+
+.post {
+    background: linear-gradient(135deg, #fcb045, #6f42c1);
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden; 
+    width: 100%; 
+    max-width: 600px; 
+    transition: transform 0.2s; /* Efeito de transição ao passar o mouse */
+}
+
+.post:hover {
+    transform: translateY(-5px); /* Leve movimento ao passar o mouse */
+}
+
+.post img {
+    width: 100%; 
+    height: auto; 
+    object-fit: cover; 
+}
+
+.post h1{
+    margin: 15px;
+    color: #833ab4;
+}
+
+.post h2 {
+    font-size: 1.5em;
+    margin: 15px;
+    color: #fd1d1d;
+}
+
+.post p {
+    margin: 15px;
+    font-size: 1em;
+    color: black;
+}
+
+.posts-body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #833ab4, #fd1d1d, #fcb045);
+    color: #fff;
+    margin-left: 500px;
+    justify-content: center;
+    align-items: center;
+}

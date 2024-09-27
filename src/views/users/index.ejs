@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Unicesumar - Lista de Usuários</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body class="body">
+    <div class="container-index mt-5">
+        <h1 class="mb-4">Lista de Usuários</h1>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Nome de Usuário</th>
+                    <th>Email</th>
+                    <th>Papel</th>
+                    <th>Ativo</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% if (users.length > 0) { %>
+                    <% users.forEach(user => { %>
+                        <tr>
+                            <td><%= user.id %></td>
+                            <td><%= user.username %></td>
+                            <td><%= user.email %></td>
+                            <td><%= user.role %></td>
+                            <td><%= user.active ? 'Sim' : 'Não' %></td>
+                            <td class="arrumar">
+                                <a href="#" class="btn btn-edit">Editar</a>
+                                <form action="/users/delete/<%= user.id %>" method="POST">
+                                    <button type="submit" class="btn btn-delete">Excluir</button>
+                                </form>
+                            </td>
+                        </tr>
+                    <% }) %>
+                <% } else { %>
+                <tr>
+                    <td colspan="6">Nenhum usuário cadastrado</td>
+                </tr>
+                <% } %>
+            </tbody>
+        </table>
+        <a href="/users/form" class="btn btn-primary mt-3">Adicionar Usuário</a>
+        <a href="/login" class="btn btn-primary mt-3">Ir Para Login</a>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

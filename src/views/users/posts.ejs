@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+    <title>Posts</title>
+</head>
+<body class="posts-body">
+    <div class="posts-container">
+        <% posts.forEach(post => { %>
+            <div class="post">
+                <h1> POST: <%= post.id %></h1>
+                <h2><%= post.title %></h2>
+                <img src="<%= post.image_url %>" alt="<%= post.title %>">
+                <p><%= post.description %></p>
+            </div>
+            <br> 
+        <% }) %>
+    </div>
+</body>
+</html>
